@@ -22,7 +22,7 @@ with open('models/label_encoder.pkl', 'rb') as f:
     label_encoders = pickle.load(f)
 
 # Load the dataset
-df = pd.read_csv('C:\\Users\\M SOWMITHA\\Desktop\\DSA_CAPSTONE\\data\\Intrusion_detection.csv')
+df = pd.read_csv('data/Intrusion_detection.csv')
 
 # Preprocessing
 df.fillna(method='ffill', inplace=True)
