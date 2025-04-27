@@ -11,13 +11,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Load the model and scaler
-with open('C:\\Users\\M SOWMITHA\\Desktop\\DSA_CAPSTONE\\models\\decision_tree.pkl', 'rb') as f:
+
+with open('models/decision_tree.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('C:\\Users\\M SOWMITHA\\Desktop\\DSA_CAPSTONE\\models\\scaler.pkl', 'rb') as f:
+with open('models/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-with open('C:\\Users\\M SOWMITHA\\Desktop\\DSA_CAPSTONE\\models\\label_encoder.pkl', 'rb') as f:
+with open('models/label_encoder.pkl', 'rb') as f:
     label_encoders = pickle.load(f)
 
 # Load the dataset
